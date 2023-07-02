@@ -18,5 +18,16 @@
     <ClCompile Include="演讲比赛流程管理系统.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="speechManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="speaker.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="speechManager.h">
+      <Filter>头文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
