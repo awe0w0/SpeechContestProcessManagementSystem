@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <functional>
 #include <numeric>
+#include <fstream>
+#include <ctime>
 #include "speaker.h"
 using namespace std;
 
@@ -22,9 +24,19 @@ public:
 
 	void startSpeech();
 
+	void speechDraw();
+
 	void speechContest();
 
 	void showScore();
+
+	void saveRecord();
+
+	void loadRecord();
+
+	void showRecord();
+
+	void clearRecord();
 
 	vector<int>v1;
 
@@ -35,6 +47,10 @@ public:
 	map<int, Speaker> m_Speaker;
 
 	int m_Index;
+
+	bool fileIsEmpty;
+
+	map<int, vector<string>> m_Record;
 
 	~SpeechManager();
 };

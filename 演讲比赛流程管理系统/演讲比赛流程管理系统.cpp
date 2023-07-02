@@ -18,6 +18,8 @@
 #include "speechManager.h"
 
 int main() {
+	srand((unsigned int)time(NULL));
+
 	SpeechManager sm;
 	
 	int choice = 0;
@@ -34,13 +36,14 @@ int main() {
 			return 0;
 			break;
 		case 1:
-
+			sm.startSpeech();
 			break;
 		case 2:
-
+			sm.loadRecord();
+			sm.showRecord();
 			break;
 		case 3:
-
+			sm.clearRecord();
 			break;
 		default:
 			cout << "请输入正确选项" << endl;
